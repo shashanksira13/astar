@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="2">
+	<name>fub_astar</name>
+	<version>0.0.1</version>
+	<description>A simple pathplanner, which follows the nearest lane from an atlas map</description>
+
+	<maintainer email="zahra.boroujeni@fu-berlin.de">Autonomos-Labs, FU Berlin</maintainer>
+
+	<license>proprietary</license>
+
+	<url type="website">https://www.autonomos-labs.de/</url>
+
+	<author email="zahra.boroujeni@fu-berlin.de">Autonomos-Labs, FU Berlin</author>
+
+	<buildtool_depend>catkin</buildtool_depend>
+
+	<build_depend>autonomos_atlas_lib</build_depend>
+	<build_depend>autonomos_cmake</build_depend>
+	<build_depend>autonomos_common_types</build_depend>
+	<build_depend>cmake_modules</build_depend>
+	<build_depend>roscpp</build_depend>
+
+	<depend>autonomos_atlas_arnd</depend>
+	<depend>dynamic_reconfigure</depend>
+	<depend>fub_obstacle_msgs</depend>
+	<depend>nodelet</depend>
+	<depend>teb_local_planner</depend>
+	<depend>ecl_geometry</depend>
+	
+
+
+	<export>
+		<nodelet plugin="${prefix}/nodelet_plugins.xml" />
+	</export>
+</package>

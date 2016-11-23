@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="px" />
+	<arg name="py" />
+	<arg name="ox" />
+	<arg name="oy" />
+	<arg name="v" />
+	<node name="show_path" pkg="fub_astar" type="showpath" args="$(arg px) $(arg py) $(arg ox) $(arg oy) $(arg v))" output="screen" />
+	<node pkg="tf" type="static_transform_publisher" name="path" args="0 0 0 0 0 0 /world /map 500" />
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find fub_astar)/cfg/config.rviz" />
+</launch>
