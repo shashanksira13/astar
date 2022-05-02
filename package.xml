@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-	<name>fub_astar</name>
+	<name>astar</name>
 	<version>0.0.1</version>
 	<description>A simple pathplanner, which follows the nearest lane from an atlas map</description>
 
